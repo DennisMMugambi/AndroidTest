@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav_graph"
+    app:startDestination="@+id/main">
+
+    <fragment
+        android:id="@+id/main"
+        android:name="com.rapptrlabs.androidtest.ui.home.MainFragment"
+        tools:layout="@layout/fragment_main"
+        android:label="@string/coding_test">
+
+        <action
+            android:id="@+id/action_mainFragment_to_loginFragment"
+            app:destination="@id/login" />
+
+        <action
+            android:id="@+id/action_mainFragment_to_chatFragment"
+            app:destination="@id/chat" />
+
+        <action
+            android:id="@+id/action_mainFragment_to_animationFragment"
+            app:destination="@id/animation"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.rapptrlabs.androidtest.ui.login.LoginFragment"
+        tools:layout="@layout/fragment_login"
+        android:label="@string/login"/>
+
+    <fragment
+        android:id="@+id/chat"
+        android:name="com.rapptrlabs.androidtest.ui.chat.ChatFragment"
+        tools:layout="@layout/fragment_chat"
+        android:label="@string/chat"/>
+
+
+    <fragment
+        android:id="@+id/animation"
+        android:name="com.rapptrlabs.androidtest.ui.animation.AnimationFragment"
+        tools:layout="@layout/fragment_animation"
+        android:label="@string/animation"/>
+
+</navigation>

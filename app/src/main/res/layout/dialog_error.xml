@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_loans_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/_0dp"
+    android:filterTouchesWhenObscured="true"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="@dimen/_20dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:strokeWidth="@dimen/_0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_20dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="@dimen/_100dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4"
+            app:layout_constraintVertical_chainStyle="spread_inside"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/error_animation" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/icon"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/message"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/duration"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/message"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/dismiss_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/okay"
+            android:textSize="@dimen/_16sp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_marginTop="@dimen/_10dp"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            app:backgroundTint="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/duration"
+            app:strokeColor="@android:color/holo_red_light"
+            app:strokeWidth="@dimen/_2dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

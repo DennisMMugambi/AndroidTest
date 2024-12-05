@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gpc_background"
+        android:fitsSystemWindows="true"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin">
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:id="@+id/chatButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/chat_button"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/button_text_size"
+                android:textColor="@android:color/black"
+                android:elevation="@dimen/button_elevation"
+                android:backgroundTint="@android:color/white"
+                android:alpha="0.8"
+                app:icon="@drawable/ic_chat"
+                app:iconGravity="start"
+                app:iconPadding="@dimen/icon_padding"
+                app:layout_constraintBottom_toTopOf="@+id/loginButton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/login_button"
+                android:textSize="@dimen/button_text_size"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/black"
+                android:elevation="@dimen/button_elevation"
+                android:backgroundTint="@android:color/white"
+                android:alpha="0.8"
+                app:icon="@drawable/ic_lock"
+                app:iconGravity="start"
+                app:iconPadding="@dimen/icon_padding"
+                app:layout_constraintBottom_toTopOf="@+id/animationButton"
+                app:layout_constraintTop_toBottomOf="@+id/chatButton" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:id="@+id/animationButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/animation_button"
+                android:textSize="@dimen/button_text_size"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/black"
+                android:elevation="@dimen/button_elevation"
+                android:backgroundTint="@android:color/white"
+                android:alpha="0.8"
+                app:cornerRadius="@dimen/button_corner_radius"
+                app:icon="@drawable/ic_animation"
+                app:iconGravity="start"
+                app:iconPadding="@dimen/icon_padding"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/loginButton" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

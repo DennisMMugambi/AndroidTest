@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyAppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+
+        <item name="colorPrimary">#0E5C89</item>
+        <item name="colorPrimaryVariant">#0B496D</item>
+        <item name="colorOnPrimary">#0B496D</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#0E5C89</item>
+        <item name="colorSecondaryVariant">#0E5C89</item>
+        <item name="colorOnSecondary">#0E5C89</item>
+
+        <item name="android:windowBackground">#F9F9F9</item>
+
+        <item name="statusBarBackground">#0B496D</item>
+    </style>
+
+    <style name="AlertTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <!-- Primary brand color.background: #FE6B00;-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@android:color/white</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="android:layout_marginEnd">@dimen/_10dp</item>
+        <item name="android:layout_marginStart">@dimen/_5dp</item>
+    </style>
+
+
+    <dimen name="_5dp">5dp</dimen>
+</resources>
