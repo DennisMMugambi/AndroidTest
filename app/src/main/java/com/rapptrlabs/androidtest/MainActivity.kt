@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.MenuItem
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
@@ -28,7 +29,11 @@ class MainActivity : AppCompatActivity() {
         true
     ) {
         override fun handleOnBackPressed() {
+            if (navController.currentDestination?.id  == R.id.main) {
+                showLogoutConfirmationDialog()
+            } else {
                 navController.navigateUp()
+            }
         }
     }
 
@@ -75,6 +80,22 @@ class MainActivity : AppCompatActivity() {
             this,
             callback
         )
+    }
+
+    private fun showLogoutConfirmationDialog() {
+        val builder = AlertDialog.Builder(this)
+        builder.setMessage(resources.getString(R.string.confirm_logout))
+        builder.setPositiveButton("Yes") { dialog, which ->
+            finishAffinity()
+            finish()
+        }
+        builder.setNegativeButton(
+            resources.getString(R.string.no)
+        ) { dialog, which ->
+            dialog.dismiss()
+        }
+        val dialog = builder.create()
+        dialog.show()
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

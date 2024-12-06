@@ -17,5 +17,7 @@
     <string name="chat">Chat</string>
     <string name="animation">Animation</string>
     <string name="coding_test">Coding Tasks</string>
+    <string name="confirm_logout">Confirm you wish to exit</string>
+    <string name="no">No</string>
 
 </resources>
