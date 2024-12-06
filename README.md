@@ -59,7 +59,7 @@
 
 - **Splash Screen**:  
   The splash screen was not implemented beyond the default recommendation of a simple app icon centered on a colored background.  
-  - **Reason**: According to current Android documentation, providing a custom splash screen in addition to the default could result in the app being flagged as an issue during the Play Store release process.
+  - **Reason**: Currently per the developer documentation the splash screen is standard as an app icon on screen with a colored background (android 12 and above), there may be alternative ways of achieving a full screen image without a duplicate splash screen, however i wasn't able to achieve this in time.
 
 ---
 
