@@ -3,7 +3,7 @@
 ## Environment
 
 - **JDK Version**: 21  
-- **Kotlin Version**: 1.9.21 (Updated for compatibility with Android Studio Ladybug and Gradle 8.9 but not fully updated for compatibility with kapt)  
+- **Kotlin Version**: 1.9.21  
 - **Target Android Version**: 15  
 - **Used version Catalog for dependncy management**
 - **Migrated build.gradle files from groovy to kotlin DSL**
